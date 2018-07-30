@@ -1,0 +1,6 @@
+node_modules/
+server.log
+.vs
+octa.txt
+ssh
+ssh.pub

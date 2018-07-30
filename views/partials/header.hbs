@@ -1,0 +1,25 @@
+<div>
+    <div style="border: 1px black dashed; position: absolute; width: 130px; height: 40px;">
+        <p style="margin: 0px 15px; width: 110px; top: 10px; position: absolute;">
+            Logo goes here
+        </p>
+    </div>
+
+    <h1 style="
+    width: 200px;
+    left: 140px;
+    position: relative;">
+        {{pageTitle}}
+    </h1>
+        <p><a href="/">Home</a></p>
+        <p><a href="/about">About</a></p>
+        <p><a href="/projects">Projects</a></p>
+    {{#unless isAuthrnticated}}
+        <p><a href="/login">Login</a></p>
+    {{/unless}}
+    {{#if isAuthrnticated}}
+        <P>
+            If you'd like to logout, please <a href="/logout">click here</a>
+        </P>
+    {{/if}}
+</div>
